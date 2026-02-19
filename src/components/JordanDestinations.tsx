@@ -91,23 +91,6 @@ const JordanDestinations = () => {
           ))}
         </div>
 
-        {/* Countries strip */}
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
-          {[
-            { name: "Jordan", flag: "🇯🇴", count: "15+ destinations" },
-            { name: "Egypt", flag: "🇪🇬", count: "Cairo · Pyramids · Luxor" },
-            { name: "Palestine", flag: "🇵🇸", count: "Jerusalem · Bethlehem" },
-            { name: "Oman", flag: "🇴🇲", count: "Coming soon" },
-          ].map((country) => (
-            <div key={country.name} className="bg-muted/40 border border-border p-5 flex items-center gap-3 hover:border-primary/30 transition-colors">
-              <span className="text-2xl">{country.flag}</span>
-              <div>
-                <div className="font-body text-sm font-semibold text-foreground">{country.name}</div>
-                <div className="font-body text-xs text-muted-foreground mt-0.5">{country.count}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
