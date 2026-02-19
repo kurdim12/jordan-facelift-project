@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import JordanNavbar from "@/components/JordanNavbar";
+import JordanHero from "@/components/JordanHero";
+import JordanTours from "@/components/JordanTours";
+import JordanWhyJordan from "@/components/JordanWhyJordan";
+import JordanTourTypes from "@/components/JordanTourTypes";
+import JordanAbout from "@/components/JordanAbout";
+import JordanDestinations from "@/components/JordanDestinations";
+import JordanBlog from "@/components/JordanBlog";
+import JordanCTA from "@/components/JordanCTA";
+import JordanFooter from "@/components/JordanFooter";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <JordanNavbar />
+      <JordanHero />
+      <JordanTours />
+      <JordanWhyJordan />
+      <JordanTourTypes />
+      <JordanAbout />
+      <JordanDestinations />
+      <JordanBlog />
+      <JordanCTA />
+      <JordanFooter />
     </div>
   );
 };
