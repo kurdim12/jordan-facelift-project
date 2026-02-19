@@ -38,11 +38,11 @@ const JordanDestinations = () => {
         </div>
 
         {/* Mosaic grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 auto-rows-[220px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 auto-rows-[180px] sm:auto-rows-[220px]">
           {/* Featured — large */}
           <Link
             to={`/destinations/${destinations[0].slug}`}
-            className="group relative overflow-hidden col-span-2 row-span-2"
+            className="group relative overflow-hidden col-span-1 sm:col-span-2 row-span-1 sm:row-span-2"
           >
             <img
               src={destinations[0].image}
@@ -58,7 +58,7 @@ const JordanDestinations = () => {
                 <MapPin size={12} className="text-primary" />
                 <span className="font-body text-xs text-ivory/60 uppercase tracking-wider">{destinations[0].region}</span>
               </div>
-              <h3 className="font-display text-4xl font-semibold text-ivory">{destinations[0].name}</h3>
+              <h3 className="font-display text-2xl sm:text-4xl font-semibold text-ivory">{destinations[0].name}</h3>
               <p className="font-body text-sm text-ivory/60 mt-1">{destinations[0].desc}</p>
               <div className="flex items-center gap-1 mt-4 font-body text-xs text-primary uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
                 Explore <ArrowUpRight size={12} />
@@ -92,7 +92,7 @@ const JordanDestinations = () => {
         </div>
 
         {/* Countries strip */}
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
           {[
             { name: "Jordan", flag: "🇯🇴", count: "15+ destinations" },
             { name: "Egypt", flag: "🇪🇬", count: "Cairo · Pyramids · Luxor" },

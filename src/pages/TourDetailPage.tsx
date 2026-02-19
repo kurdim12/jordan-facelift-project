@@ -26,13 +26,13 @@ const TourDetailPage = () => {
       <JordanNavbar />
 
       {/* Cinematic Hero */}
-      <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
+      <section className="relative h-[55vh] min-h-[380px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-midnight/95 via-midnight/40 to-midnight/10" />
           <div className="absolute inset-0 bg-gradient-to-r from-midnight/60 to-transparent" />
         </div>
-        <div className="relative z-10 container mx-auto px-6 lg:px-12 pb-14">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 pb-10 sm:pb-14">
           <Link to="/tours" className="inline-flex items-center gap-2 font-body text-xs text-ivory/50 hover:text-primary uppercase tracking-wider mb-8 transition-colors">
             <ArrowLeft size={13} /> All Tours
           </Link>
@@ -43,8 +43,8 @@ const TourDetailPage = () => {
               <span className="font-body text-xs text-ivory">{pkg.rating} · {pkg.reviews} reviews</span>
             </div>
           </div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold text-ivory leading-tight mb-3">{pkg.title}</h1>
-          <div className="flex items-center gap-5">
+          <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-ivory leading-tight mb-3">{pkg.title}</h1>
+          <div className="flex flex-wrap items-center gap-3 sm:gap-5">
             <div className="flex items-center gap-1.5">
               <MapPin size={13} className="text-primary" />
               <span className="font-body text-sm text-ivory/60">{pkg.subtitle}</span>
@@ -69,8 +69,8 @@ const TourDetailPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 
           {/* Left: Details */}
           <div className="lg:col-span-2 space-y-14">
@@ -121,7 +121,7 @@ const TourDetailPage = () => {
               <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mt-2 mb-8">Your Itinerary</h2>
               <div className="space-y-0">
                 {pkg.itinerary.map((day, i) => (
-                  <div key={i} className="flex gap-6 group">
+                  <div key={i} className="flex gap-3 sm:gap-6 group">
                     {/* Timeline */}
                     <div className="flex flex-col items-center flex-shrink-0">
                       <div className="w-11 h-11 bg-primary text-primary-foreground flex items-center justify-center font-display text-lg font-semibold">

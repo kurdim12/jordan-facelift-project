@@ -17,8 +17,8 @@ const DestinationsPage = () => {
       />
 
       <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
             {destinations.map((dest, i) => (
               <Link
                 key={i}
@@ -57,7 +57,7 @@ const DestinationsPage = () => {
           </div>
 
           {/* Countries Banner */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="mt-14 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {[
               { name: "Jordan", count: "15+ destinations" },
               { name: "Egypt", count: "Cairo · Pyramids · Luxor" },

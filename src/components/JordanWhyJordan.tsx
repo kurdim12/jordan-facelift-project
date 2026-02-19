@@ -56,10 +56,10 @@ const JordanWhyJordan = () => {
     <section className="py-24 bg-secondary overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
             <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Why Jordan?</span>
-            <h2 className="font-display text-5xl md:text-6xl font-semibold text-secondary-foreground mt-2 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-secondary-foreground mt-2 leading-tight">
               A Kingdom Like<br />
               <em className="italic font-normal text-primary">No Other</em>
             </h2>
@@ -73,11 +73,11 @@ const JordanWhyJordan = () => {
         </div>
 
         {/* Cards — horizontal scroll on mobile, grid on desktop */}
-        <div className="flex gap-5 overflow-x-auto pb-4 no-scrollbar md:grid md:grid-cols-3 lg:grid-cols-6 md:overflow-visible">
+        <div className="flex gap-4 overflow-x-auto pb-4 no-scrollbar md:grid md:grid-cols-3 lg:grid-cols-6 md:overflow-visible">
           {reasons.map((r, i) => (
             <div
               key={i}
-              className="flex-shrink-0 w-64 md:w-auto group relative overflow-hidden"
+              className="flex-shrink-0 w-56 md:w-auto group relative overflow-hidden"
             >
               <div className="aspect-[3/4] overflow-hidden relative">
                 <img

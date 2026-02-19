@@ -31,12 +31,12 @@ const BlogDetailPage = () => {
           <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-midnight/90 via-midnight/40 to-transparent" />
         </div>
-        <div className="relative z-10 container mx-auto px-6 pb-12">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pb-10 sm:pb-12">
           <Link to="/blog" className="flex items-center gap-2 font-body text-xs text-ivory/60 hover:text-primary uppercase tracking-wider mb-6 transition-colors">
             <ArrowLeft size={14} /> All Articles
           </Link>
           <span className="font-body text-xs tracking-wider bg-primary text-primary-foreground px-3 py-1 uppercase mb-4 inline-block">{post.category}</span>
-          <h1 className="font-display text-4xl md:text-6xl font-semibold text-ivory leading-tight max-w-4xl mt-3">{post.title}</h1>
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-semibold text-ivory leading-tight max-w-4xl mt-3">{post.title}</h1>
           <p className="font-body text-sm text-ivory/50 mt-3">Published {post.date}</p>
         </div>
       </section>
@@ -55,12 +55,12 @@ const BlogDetailPage = () => {
           </p>
 
           {/* CTA */}
-          <div className="bg-card border border-border p-8 mt-12">
-            <h3 className="font-display text-3xl font-semibold text-foreground mb-2">Ready to Experience Jordan?</h3>
+          <div className="bg-card border border-border p-5 sm:p-8 mt-12">
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-foreground mb-2">Ready to Experience Jordan?</h3>
             <p className="font-body text-sm text-muted-foreground mb-6 leading-relaxed">
               Let our local experts craft your perfect itinerary — private, group, or tailor-made.
             </p>
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link to="/tours" className="bg-primary hover:bg-terracotta text-primary-foreground font-body text-xs tracking-wider px-6 py-3 uppercase transition-all duration-300">
                 View Tours
               </Link>

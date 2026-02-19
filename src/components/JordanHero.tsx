@@ -53,8 +53,8 @@ const JordanHero = () => {
             </Link>
           </div>
 
-          {/* Trust stats */}
-          <div className="flex items-center gap-8">
+      {/* Trust stats */}
+          <div className="flex flex-wrap items-center gap-5 sm:gap-8">
             {[
               { icon: Users, num: "500+", label: "Happy Travellers" },
               { icon: Shield, num: "12+", label: "Years Experience" },

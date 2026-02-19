@@ -5,10 +5,10 @@ const WhatsAppButton = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2">
       {/* Tooltip popup */}
       {expanded && (
-        <div className="bg-midnight/95 backdrop-blur-md border border-stone/20 p-4 w-64 shadow-warm mb-1">
+        <div className="bg-midnight/95 backdrop-blur-md border border-stone/20 p-4 w-56 sm:w-64 shadow-warm mb-1">
           <div className="flex items-start justify-between mb-2">
             <div className="font-body text-xs text-ivory font-semibold">Jordan Address</div>
             <button onClick={() => setExpanded(false)} className="text-ivory/40 hover:text-ivory">

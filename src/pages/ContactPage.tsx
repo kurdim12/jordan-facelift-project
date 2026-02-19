@@ -28,7 +28,7 @@ const ContactPage = () => {
 
       {/* Contact info strip */}
       <div className="bg-secondary border-b border-stone/10">
-        <div className="container mx-auto px-6 lg:px-12 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {[
             { icon: Phone, label: "WhatsApp", value: "+962 6 XXX XXXX", href: "https://wa.me/962" },
             { icon: Mail, label: "Email", value: "info@jordanaddress.com", href: "mailto:info@jordanaddress.com" },
@@ -49,8 +49,8 @@ const ContactPage = () => {
       </div>
 
       <section className="py-20">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
 
             {/* Left side */}
             <div className="lg:col-span-2 space-y-8">
@@ -124,7 +124,7 @@ const ContactPage = () => {
                   </a>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="bg-card border border-border p-8 md:p-10 space-y-5">
+                <form onSubmit={handleSubmit} className="bg-card border border-border p-5 sm:p-8 md:p-10 space-y-5">
                   <div>
                     <h3 className="font-display text-3xl font-semibold text-foreground mb-1">Send an Inquiry</h3>
                     <p className="font-body text-sm text-muted-foreground">Fill in your details and we'll design the perfect Jordan journey for you.</p>

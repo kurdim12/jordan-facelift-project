@@ -57,17 +57,17 @@ const BlogPage = () => {
           {featured && (
             <Link
               to={`/blog/${featured.slug}`}
-              className="group grid grid-cols-1 lg:grid-cols-2 gap-0 bg-card border border-border overflow-hidden hover:border-primary/30 transition-all duration-300 shadow-card hover:shadow-warm mb-10"
+              className="group grid grid-cols-1 lg:grid-cols-2 gap-0 bg-card border border-border overflow-hidden hover:border-primary/30 transition-all duration-300 shadow-card hover:shadow-warm mb-8 sm:mb-10"
             >
               <div className="overflow-hidden aspect-[4/3] lg:aspect-auto">
                 <img src={featured.image} alt={featured.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
-              <div className="p-10 lg:p-12 flex flex-col justify-center">
+              <div className="p-6 sm:p-10 lg:p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="font-body text-xs tracking-wider text-primary uppercase bg-primary/10 px-3 py-1">{featured.category}</span>
                   <span className="font-body text-xs text-muted-foreground">Featured</span>
                 </div>
-                <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground leading-tight mb-4 group-hover:text-primary transition-colors">
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight mb-4 group-hover:text-primary transition-colors">
                   {featured.title}
                 </h2>
                 <p className="font-body text-base text-muted-foreground leading-relaxed mb-6">{featured.excerpt}</p>

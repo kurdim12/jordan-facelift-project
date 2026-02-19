@@ -29,7 +29,7 @@ const JordanFooter = () => {
       {/* Trust bar */}
       <div className="border-b border-stone/10">
         <div className="container mx-auto px-6 lg:px-12 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
               { icon: "🏆", label: "DMC Certified", sub: "Licensed in Jordan" },
               { icon: "⭐", label: "4.9 Rating", sub: "200+ verified reviews" },
@@ -49,8 +49,8 @@ const JordanFooter = () => {
       </div>
 
       {/* Main footer */}
-      <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
           {/* Brand */}
           <div className="lg:col-span-4">
             <Link to="/" className="block mb-5">
@@ -97,7 +97,7 @@ const JordanFooter = () => {
           </div>
 
           {/* Links */}
-          <div className="lg:col-span-2 lg:col-start-6">
+          <div className="lg:col-span-2 sm:col-span-1 lg:col-start-6">
             <h4 className="font-body text-xs tracking-[0.3em] text-primary uppercase mb-5">Tours</h4>
             <ul className="space-y-2.5">
               {tourLinks.map((link) => (
@@ -150,9 +150,9 @@ const JordanFooter = () => {
 
       {/* Bottom bar */}
       <div className="border-t border-stone/10">
-        <div className="container mx-auto px-6 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p className="font-body text-xs text-ivory/25">© 2025 Jordan Address Travel & Tourism. All rights reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6">
             <Link to="/contact" className="font-body text-xs text-ivory/25 hover:text-primary transition-colors">Privacy Policy</Link>
             <Link to="/contact" className="font-body text-xs text-ivory/25 hover:text-primary transition-colors">Terms of Service</Link>
             <Link to="/contact" className="font-body text-xs text-ivory/25 hover:text-primary transition-colors">Cookie Policy</Link>

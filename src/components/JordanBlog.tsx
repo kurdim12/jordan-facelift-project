@@ -24,10 +24,10 @@ const JordanBlog = () => {
     <section className="py-24 bg-muted/20">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
             <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Travel Journal</span>
-            <h2 className="font-display text-5xl md:text-6xl font-semibold text-foreground mt-2 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mt-2 leading-tight">
               Stories from<br />
               <em className="italic font-normal" style={{ color: "hsl(var(--accent))" }}>The Field</em>
             </h2>
