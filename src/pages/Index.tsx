@@ -5,9 +5,11 @@ import JordanWhyJordan from "@/components/JordanWhyJordan";
 import JordanTourTypes from "@/components/JordanTourTypes";
 import JordanAbout from "@/components/JordanAbout";
 import JordanDestinations from "@/components/JordanDestinations";
+import JordanTestimonials from "@/components/JordanTestimonials";
 import JordanBlog from "@/components/JordanBlog";
 import JordanCTA from "@/components/JordanCTA";
 import JordanFooter from "@/components/JordanFooter";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -19,9 +21,11 @@ const Index = () => {
       <JordanTourTypes />
       <JordanAbout />
       <JordanDestinations />
+      <JordanTestimonials />
       <JordanBlog />
       <JordanCTA />
       <JordanFooter />
+      <WhatsAppButton />
     </div>
   );
 };
