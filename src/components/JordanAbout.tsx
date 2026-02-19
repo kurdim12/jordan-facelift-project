@@ -14,9 +14,9 @@ const pillars = [
 
 const JordanAbout = () => {
   return (
-    <section className="py-24 bg-muted/30">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-16 md:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Photo Mosaic — editorial collage */}
           <div className="relative">
@@ -29,11 +29,11 @@ const JordanAbout = () => {
               <img src={amman} alt="Amman" className="aspect-[3/2] object-cover w-full col-span-2" />
             </div>
             {/* Floating badge */}
-            <div className="absolute top-4 right-0 translate-x-0 md:translate-x-4 bg-primary text-primary-foreground px-6 py-4 shadow-warm">
-              <div className="font-display text-3xl font-semibold leading-none">500+</div>
+            <div className="absolute top-4 right-0 bg-primary text-primary-foreground px-4 sm:px-6 py-3 sm:py-4 shadow-warm">
+              <div className="font-display text-2xl sm:text-3xl font-semibold leading-none">500+</div>
               <div className="font-body text-xs tracking-wider uppercase mt-1">Happy Guests</div>
             </div>
-            <div className="absolute bottom-16 left-0 -translate-x-0 md:-translate-x-4 bg-secondary text-secondary-foreground px-6 py-4 shadow-card">
+            <div className="absolute bottom-16 left-0 bg-secondary text-secondary-foreground px-4 sm:px-6 py-3 sm:py-4 shadow-card">
               <div className="font-display text-3xl font-semibold leading-none">4.9★</div>
               <div className="font-body text-xs tracking-wider uppercase mt-1">Google Rating</div>
             </div>
@@ -42,7 +42,7 @@ const JordanAbout = () => {
           {/* Text */}
           <div>
             <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Who We Are</span>
-            <h2 className="font-display text-5xl md:text-6xl font-semibold text-foreground mt-3 mb-6 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mt-3 mb-6 leading-tight">
               Jordan's Most<br />
               <em className="italic font-normal" style={{ color: "hsl(var(--accent))" }}>Trusted Guides</em>
             </h2>

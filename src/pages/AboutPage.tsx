@@ -35,23 +35,23 @@ const AboutPage = () => {
 
       {/* Founder */}
       <section className="py-20">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative">
               <img
                 src={founder}
                 alt="Mr. Rakan Hiassat — Founder"
                 className="w-full max-w-md mx-auto aspect-[3/4] object-cover object-top shadow-warm"
               />
-              <div className="absolute -bottom-6 -right-0 md:-right-8 bg-primary text-primary-foreground px-8 py-5 shadow-card">
-                <div className="font-display text-4xl font-semibold">17+</div>
+              <div className="absolute -bottom-6 right-0 sm:-right-8 bg-primary text-primary-foreground px-5 sm:px-8 py-4 sm:py-5 shadow-card">
+                <div className="font-display text-3xl sm:text-4xl font-semibold">17+</div>
                 <div className="font-body text-xs tracking-wider uppercase">Years Experience</div>
               </div>
             </div>
             <div>
-              <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Founder & General Manager</span>
-              <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mt-3 mb-5 leading-tight">
-                Mr. Rakan Hiassat
+            <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Founder & General Manager</span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mt-3 mb-5 leading-tight">
+              Mr. Rakan Hiassat
               </h2>
               <p className="font-body text-base text-muted-foreground leading-relaxed mb-4">
                 Jordan Address Travel & Tourism was founded by Mr. Rakan Hiassat, a passionate travel professional with over 17 years of experience in the tourism and hospitality industry. Based in Amman, Jordan, Jordan Address specialises in corporate and leisure travel management services.
@@ -60,7 +60,7 @@ const AboutPage = () => {
                 Mr. Hiassat began his journey in 2005 as a local tour guide — a role that shaped his deep understanding of traveller needs, cultural nuances, and exceptional service. His dedication and genuine passion for people have earned him a strong reputation for excellence and empathy.
               </p>
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 mb-10">
+              <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-10">
                 {[
                   { num: "500+", label: "Happy Travellers" },
                   { num: "30+", label: "Tour Packages" },
@@ -85,8 +85,8 @@ const AboutPage = () => {
 
       {/* Who We Are */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Who We Are</span>
               <h2 className="font-display text-5xl font-semibold text-secondary-foreground mt-3 mb-6 leading-tight">

@@ -9,10 +9,10 @@ const JordanTestimonials = () => {
     <section className="py-24 bg-secondary">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
             <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Real Stories</span>
-            <h2 className="font-display text-5xl md:text-6xl font-semibold text-secondary-foreground mt-2 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-secondary-foreground mt-2 leading-tight">
               Travellers<br /><em className="italic font-normal text-primary">Speak For Us</em>
             </h2>
           </div>
@@ -61,7 +61,7 @@ const JordanTestimonials = () => {
 
         {/* Platform logos / aggregate */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-stone/10 pt-8">
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-5 flex-wrap justify-center md:justify-start">
             {[
               { platform: "Google", rating: "4.9", reviews: "127 reviews" },
               { platform: "TripAdvisor", rating: "5.0", reviews: "89 reviews" },

@@ -21,7 +21,7 @@ const PageHero = ({ title, subtitle, tag }: PageHeroProps) => {
             <div className="h-px w-10 bg-primary/60" />
           </div>
         )}
-        <h1 className="font-display text-5xl md:text-7xl font-semibold text-ivory leading-tight">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-semibold text-ivory leading-tight">
           {title}
         </h1>
         {subtitle && (

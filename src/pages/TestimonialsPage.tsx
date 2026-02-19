@@ -23,7 +23,7 @@ const TestimonialsPage = () => {
       {/* Aggregate stats */}
       <section className="py-14 bg-secondary border-b border-stone/10">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-8 text-center">
             {[
               { num: "4.9", label: "Average Rating", sub: "Out of 5.0" },
               { num: "500+", label: "Happy Travellers", sub: "Since 2012" },
@@ -31,7 +31,7 @@ const TestimonialsPage = () => {
               { num: "100%", label: "Recommend Us", sub: "Verified guests" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-5xl font-semibold text-primary">{stat.num}</div>
+                <div className="font-display text-3xl sm:text-5xl font-semibold text-primary">{stat.num}</div>
                 <div className="font-body text-xs text-secondary-foreground/60 uppercase tracking-wider mt-2">{stat.label}</div>
                 <div className="font-body text-xs text-secondary-foreground/30 mt-0.5">{stat.sub}</div>
               </div>
@@ -104,7 +104,7 @@ const TestimonialsPage = () => {
       {/* Leave a Review */}
       <section className="py-20 bg-muted/20 border-t border-border">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start max-w-5xl mx-auto">
             <div>
               <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Your Voice</span>
               <h2 className="font-display text-4xl font-semibold text-foreground mt-3 mb-5">Leave a Review</h2>
@@ -126,8 +126,8 @@ const TestimonialsPage = () => {
               </div>
             </div>
 
-            <form className="bg-card border border-border p-8 space-y-5">
-              <div className="grid grid-cols-2 gap-4">
+            <form className="bg-card border border-border p-5 sm:p-8 space-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="font-body text-xs uppercase tracking-wider text-muted-foreground mb-2 block">Your Name *</label>
                   <input type="text" className="w-full bg-background border border-border px-4 py-3 font-body text-sm text-foreground focus:outline-none focus:border-primary transition-colors" placeholder="Sarah M." />

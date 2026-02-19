@@ -10,15 +10,15 @@ const JordanCTA = () => {
         <div className="absolute inset-0 bg-midnight/82" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left text */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-10 bg-primary/60" />
               <span className="font-body text-xs tracking-[0.4em] text-primary uppercase">Start Your Journey</span>
             </div>
-            <h2 className="font-display text-5xl md:text-7xl font-semibold text-ivory mb-6 leading-tight">
+            <h2 className="font-display text-4xl sm:text-5xl md:text-7xl font-semibold text-ivory mb-6 leading-tight">
               Ready for<br />
               <em className="italic font-normal text-primary">Jordan?</em>
             </h2>
@@ -45,7 +45,7 @@ const JordanCTA = () => {
           </div>
 
           {/* Right: quick-start panel */}
-          <div className="bg-ivory/8 backdrop-blur-sm border border-ivory/15 p-8">
+          <div className="bg-ivory/8 backdrop-blur-sm border border-ivory/15 p-5 sm:p-8">
             <h3 className="font-display text-2xl font-semibold text-ivory mb-6">Plan Your Trip</h3>
             <div className="space-y-4 mb-6">
               <div>
