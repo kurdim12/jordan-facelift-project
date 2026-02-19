@@ -56,20 +56,6 @@ const DestinationsPage = () => {
             ))}
           </div>
 
-          {/* Countries Banner */}
-          <div className="mt-14 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-            {[
-              { name: "Jordan", count: "15+ destinations" },
-              { name: "Egypt", count: "Cairo · Pyramids · Luxor" },
-              { name: "Palestine", count: "Jerusalem · Bethlehem" },
-              { name: "Oman", count: "Coming soon" },
-            ].map((country) => (
-              <div key={country.name} className="bg-secondary p-6 text-center">
-                <div className="font-display text-2xl font-semibold text-secondary-foreground">{country.name}</div>
-                <div className="font-body text-xs text-secondary-foreground/50 mt-1">{country.count}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
