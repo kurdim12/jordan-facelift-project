@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle with Jordan red -->
+  <circle cx="32" cy="32" r="32" fill="#C8102E"/>
+
+  <!-- Map pin body (white) -->
+  <path d="M32 10 C22 10 14 18 14 28 C14 40 32 56 32 56 C32 56 50 40 50 28 C50 18 42 10 32 10 Z" fill="white"/>
+
+  <!-- Inner circle (Jordan green) -->
+  <circle cx="32" cy="28" r="9" fill="#007A3D"/>
+
+  <!-- 7-pointed star (white) centered in green circle -->
+  <polygon points="
+    32,21
+    33.5,26.1
+    38.9,26.1
+    34.7,29.2
+    36.2,34.3
+    32,31.2
+    27.8,34.3
+    29.3,29.2
+    25.1,26.1
+    30.5,26.1
+  " fill="white"/>
+</svg>
